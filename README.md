@@ -1,8 +1,4 @@
 # analytics
 
 
-[I'm an inline-style link](https://www.google.com)
-
-<div class="iframe_container">
-<iframe src="https://github.com/brayellison/analytics/blob/master/season_stats.html">
-  </div>
+[Link to 10 Dudes Talking on the Internet Season Stats](https://github.com/brayellison/analytics/blob/master/season_stats.html)
