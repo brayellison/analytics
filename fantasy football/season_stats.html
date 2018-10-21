@@ -1,0 +1,502 @@
+<html>
+<body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<link href="https://codepen.io/jackrugile/pen/EyABe.css" rel="stylesheet" />
+<table id="dataframe" border="1" class="w3-table-all">
+  <thead>
+    <tr style="text-align: right;">
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(1)')" style="cursor:pointer">season</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(2)')" style="cursor:pointer">teamId</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(3)')" style="cursor:pointer">title</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(4)')" style="cursor:pointer">points</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(5)')" style="cursor:pointer">beat_median</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(6)')" style="cursor:pointer">won_matchup</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(7)')" style="cursor:pointer">alt_scoring</th>
+      <th onclick="w3.sortHTML('#dataframe', '.item', 'td:nth-child(8)')" style="cursor:pointer">curr_scoring</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="item">
+      <td>2013</td>
+      <td>1</td>
+      <td>P.E.D. Breakfast (Jason Bennett)</td>
+      <td>1409.00</td>
+      <td>11</td>
+      <td>10</td>
+      <td>21</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>5</td>
+      <td>Donkey Punch (Scott Salz)</td>
+      <td>1271.00</td>
+      <td>9</td>
+      <td>8</td>
+      <td>17</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>10</td>
+      <td>Sinking Ship (Nat Saunders)</td>
+      <td>1221.00</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>3</td>
+      <td>Team Brah-hey (Andy Brorson)</td>
+      <td>1222.00</td>
+      <td>7</td>
+      <td>7</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>7</td>
+      <td>Quod Erat Demonstrandum (Bray Ellison)</td>
+      <td>1261.00</td>
+      <td>6</td>
+      <td>6</td>
+      <td>12</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>6</td>
+      <td>Now! With More!  Losing! (brandon ellison)</td>
+      <td>1129.00</td>
+      <td>5</td>
+      <td>5</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>2</td>
+      <td>Fish Taco (Victor Castorini)</td>
+      <td>1190.00</td>
+      <td>6</td>
+      <td>3</td>
+      <td>9</td>
+      <td>3</td>
+    </tr>
+    <tr class="item">
+      <td>2013</td>
+      <td>8</td>
+      <td>Likes to lose (Doug Ellison)</td>
+      <td>1115.00</td>
+      <td>2</td>
+      <td>5</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>3</td>
+      <td>They Might Be Bryants (Andy Brorson)</td>
+      <td>1169.00</td>
+      <td>8</td>
+      <td>10</td>
+      <td>18</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>10</td>
+      <td>Nat Man (Nat Saunders)</td>
+      <td>1218.00</td>
+      <td>9</td>
+      <td>8</td>
+      <td>17</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>8</td>
+      <td>Sad HighScoreLoser (Doug Ellison)</td>
+      <td>1274.00</td>
+      <td>8</td>
+      <td>8</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>6</td>
+      <td>Fitzmagic  Mike (brandon ellison)</td>
+      <td>1259.00</td>
+      <td>8</td>
+      <td>8</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>12</td>
+      <td>The DruPac Shakurs  (Drew Attana)</td>
+      <td>1226.00</td>
+      <td>9</td>
+      <td>7</td>
+      <td>16</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>1</td>
+      <td>P.E.D. Supper (Jason Bennett)</td>
+      <td>1162.00</td>
+      <td>6</td>
+      <td>6</td>
+      <td>12</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>5</td>
+      <td>Angry Dragon (Scott Salz)</td>
+      <td>1175.00</td>
+      <td>6</td>
+      <td>5</td>
+      <td>11</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>11</td>
+      <td>The Ragin'  Paigen (Paige Attana)</td>
+      <td>1077.00</td>
+      <td>4</td>
+      <td>5</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>7</td>
+      <td>Paul Mua'Crab'Tree (Bray Ellison)</td>
+      <td>1026.00</td>
+      <td>5</td>
+      <td>4</td>
+      <td>9</td>
+      <td>4</td>
+    </tr>
+    <tr class="item">
+      <td>2014</td>
+      <td>2</td>
+      <td>Milkshake Yardboys (Victor Castorini, Jason Be...</td>
+      <td>1105.00</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>2</td>
+      <td>It's fall fuckfaces! (Victor Castorini)</td>
+      <td>1509.22</td>
+      <td>10</td>
+      <td>10</td>
+      <td>20</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>5</td>
+      <td>Where is  Blumpkin (Scott Salz)</td>
+      <td>1466.94</td>
+      <td>10</td>
+      <td>7</td>
+      <td>17</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>1</td>
+      <td>P.E.D. Breakfast (Jason Bennett)</td>
+      <td>1318.36</td>
+      <td>8</td>
+      <td>8</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>12</td>
+      <td>Gronkey Kong Country (Drew Attana)</td>
+      <td>1309.56</td>
+      <td>7</td>
+      <td>7</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>6</td>
+      <td>Minor Dezaster (brandon ellison)</td>
+      <td>1287.58</td>
+      <td>6</td>
+      <td>7</td>
+      <td>13</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>10</td>
+      <td>Bell Fell (Nat Saunders)</td>
+      <td>1317.60</td>
+      <td>6</td>
+      <td>6</td>
+      <td>12</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>8</td>
+      <td>Broke back fantasy (Doug Ellison)</td>
+      <td>1246.72</td>
+      <td>6</td>
+      <td>6</td>
+      <td>12</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>3</td>
+      <td>They Might Be Injured (Andy Brorson)</td>
+      <td>1210.98</td>
+      <td>6</td>
+      <td>4</td>
+      <td>10</td>
+      <td>4</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>11</td>
+      <td>Some Body (Kyle Myers)</td>
+      <td>1294.40</td>
+      <td>3</td>
+      <td>6</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2015</td>
+      <td>7</td>
+      <td>The RVA Dumpster Fires (Bray Ellison)</td>
+      <td>1122.72</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>12</td>
+      <td>The Jordan Reed Options (Drew Attana)</td>
+      <td>1483.34</td>
+      <td>11</td>
+      <td>10</td>
+      <td>21</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>10</td>
+      <td>We Are Marshall (Nat Saunders)</td>
+      <td>1428.28</td>
+      <td>9</td>
+      <td>7</td>
+      <td>16</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>7</td>
+      <td>Cam You Feel It Intensify (Bray Ellison)</td>
+      <td>1398.38</td>
+      <td>9</td>
+      <td>7</td>
+      <td>16</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>1</td>
+      <td>P.E.D. Breakfast (Jason Bennett)</td>
+      <td>1366.12</td>
+      <td>7</td>
+      <td>8</td>
+      <td>15</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>6</td>
+      <td>The Antonio Brown Notes (brandon ellison)</td>
+      <td>1283.46</td>
+      <td>9</td>
+      <td>6</td>
+      <td>15</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>5</td>
+      <td>Blowing Breeze (Scott Salz)</td>
+      <td>1357.56</td>
+      <td>7</td>
+      <td>7</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>8</td>
+      <td>Broke back fantasy (Doug Ellison)</td>
+      <td>1288.50</td>
+      <td>6</td>
+      <td>8</td>
+      <td>14</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>11</td>
+      <td>BORTLES 2016 (Brett moore)</td>
+      <td>1244.34</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>3</td>
+      <td>Palmer I Hardly Knew Her (Andy Brorson)</td>
+      <td>1168.94</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+    <tr class="item">
+      <td>2016</td>
+      <td>2</td>
+      <td>Deflate GREAT! (Victor Castorini)</td>
+      <td>1069.18</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>10</td>
+      <td>Mr. Rodgers Neighborhood (Nat Saunders)</td>
+      <td>1397.72</td>
+      <td>10</td>
+      <td>10</td>
+      <td>20</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>6</td>
+      <td>The Antonio Brown Notes (brandon ellison)</td>
+      <td>1373.00</td>
+      <td>10</td>
+      <td>10</td>
+      <td>20</td>
+      <td>10</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>8</td>
+      <td>Broke back fantasy (Doug Ellison)</td>
+      <td>1284.12</td>
+      <td>6</td>
+      <td>8</td>
+      <td>14</td>
+      <td>8</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>7</td>
+      <td>Hyde The Sausage (Bray Ellison)</td>
+      <td>1290.36</td>
+      <td>7</td>
+      <td>6</td>
+      <td>13</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>3</td>
+      <td>Super Mario(ta) Bros. (Andy Brorson)</td>
+      <td>1238.60</td>
+      <td>8</td>
+      <td>5</td>
+      <td>13</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>11</td>
+      <td>Matty Ice (Brett moore)</td>
+      <td>1274.56</td>
+      <td>7</td>
+      <td>5</td>
+      <td>12</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>5</td>
+      <td>Devonta Dance (Scott Salz)</td>
+      <td>1234.10</td>
+      <td>5</td>
+      <td>6</td>
+      <td>11</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>12</td>
+      <td>Honey Funchess Of Oats (Drew Attana)</td>
+      <td>1201.92</td>
+      <td>5</td>
+      <td>5</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>2</td>
+      <td>DeflateGreat White North (Victor Castorini, Cl...</td>
+      <td>1137.28</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr class="item">
+      <td>2017</td>
+      <td>1</td>
+      <td>P.E.D. Breakfast (Jason Bennett)</td>
+      <td>1149.18</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
